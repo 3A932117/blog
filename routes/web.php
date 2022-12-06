@@ -15,7 +15,7 @@ use App\Http\Controllers\PhotoController;
 */
 
 Route::resource('photos', PhotoController::class)->only([
-    'index', 'show', 'store', 'update']);
+    'index', 'show', 'store', 'update', 'destroy']);
 
 Route::get('/', function () {
     return view('welcome');
